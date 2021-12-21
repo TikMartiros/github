@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../fileCss/headerCv.css">
+    <link rel="stylesheet" href="../fileCss/linkButon.css">
+    <link rel="stylesheet" href="../fileCss/styleUser.css">
+    <link rel="stylesheet" href="../fileCss/media.css">
+    <link rel="stylesheet" href="../fileCss/grid.css">
+    <link rel="stylesheet" href="../fileCss/gridImg.css">
+    <link rel="stylesheet" href="../fileCss/secondPage.css">
+</head>
+
+<body>
+    <header>
+        <p>1-2-3 <span>Web-Design</span></p>
+        <span class="dropDown">
+        <button class="dropBtn">SEE MORE</button>
+        <span class="dropDown-content">
+          <ul>
+            <li class="linkHome"></li>
+            <li class="linkCVPage"><a href="">CV Page</a></li>
+            <li class="linkLogIn"></li>
+          </ul>
+        </span>
+        </span>
+    </header>
+
+
+
+
+    <div class="homeBody">
+        <div class="user hidden">
+            <h1>Contact Us</h1><br>
+
+            <form>
+                <label for="fname">Name</label><br />
+                <input class="name" type="text" id="fname" name="fname" placeholder="Enter your name" /><br />
+                <label for="email">Email Address</label><br />
+                <input class="name" type="email" id="email" name="email" placeholder="Enter your mail" /><br />
+                <label for="Message">Message</label><br />
+                <textarea class="name message" id="Message" placeholder="Your message..." name="Message"></textarea
+                              ><br /><br />
+                   <input class="submit message" type="submit" value="Send" />
+             </form>
+        </div>
+
+
+
+
+    <div class="cvBody"> 
+
+        <div class="cv">
+            <div class="item">
+                <div class="nested_box"><img src="" alt="cvimg" class="cv_img"></div> 
+                <div class="newBox"><a href="#addnew" class="cv_link"><span>+Add new person</span></a></div>
+            </div>
+        </div>
+        <div class="box hidden">
+            <div class="wrapper cvWrapper">
+                <div class="header">
+                    <div class="personName">
+                        <div class="name">
+                            <h1 class="secondPageName"></h1>
+                        </div>
+                        <div class="contact">
+                            <p class="phone"><label for="">Phone:</label><span></span></p>
+                            <p class="email"><label for="">Email:</label><span></span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="personImg"><img src="../poto/imgAdd.png" alt="img"></div>
+                </div>
+               
+                <div class="infoBox">
+                    <div class="info">
+                        <div class="info">
+                            <h3 class="infoHeader"></h3>
+                            <div class="infoText" id="education1">
+                                <div class="infoSubHeader">
+                                    <p class="subHeader">College of Informatics</p>
+                                    <p class="infoDate">2003-2006</p>
+                                </div>
+                                <div class="infoSubText">
+                                    <p class="">Programmer</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info">
+                            <h3 class="infoWork"></h3>
+                            <div class="infoText">
+                                <div class="infoSubHeader">
+                                    <p class="subHeader">Mon Amie Flower and Design Boutic</p>
+                                    <p class="infoDate">2011-2017</p>
+                                </div>
+                                <div class="infoSubText">
+                                    <p class="">Junior Accountant</p>
+                                </div>
+                            </div>
+                            <div class="infoText">
+                                <div class="infoSubHeader">
+                                    <p class="subHeader">BANK</p>
+                                    <p class="infoDate">2014-2021</p>
+                                </div>
+                                <div class="infoSubText">
+                                    <p class="">Computer Operator</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+              
+            </div>
+            </div>
+        </div>
+        <div class="addNewBody hidden"><form>
+            <label for="fname">Name</label><br />
+            <input class="name" type="text" id="fname" name="fname" placeholder="Enter your name" /><br />
+            <label for="email">Email Address</label><br />
+            <input class="name" type="email" id="email" name="email" placeholder="Enter your mail" /><br />
+            <label for="Message">Message</label><br />
+            <textarea class="name message" id="Message" placeholder="Your message..." name="Message"></textarea
+        ><br /><br />
+        <input class="submit message" type="submit" value="Send" />
+      </form></div>
+    </div>
+  
+</div>
+    <script type ="module" src="../fileJS/headerCv.js"></script>
+</body>
+</html>

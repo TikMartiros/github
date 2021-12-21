@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* user */
+        
+        .div2 {
+            background-color: #35424a;
+            border: hidden;
+            width: 25%;
+            height: 360px;
+            padding: 10px;
+            margin: auto;
+            font-size: larger;
+            font-family: sans-serif;
+            color: white;
+        }
+        /* form {
+            line-height: -10px;
+        } */
+        
+        .name {
+            width: 100%;
+            height: 35px;
+        }
+        
+        .message {
+            height: 45px;
+        }
+        
+        .submit {
+            width: 30%;
+            background-color: hsla(0, 0%, 100%, 0.61);
+        }
+        /* user */
+        
+        header {
+            width: 100%;
+            height: 100px;
+            background: hsl(210, 2%, 21%);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        
+        #menu-bar {
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            border: 0.1rem solid #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            display: none;
+        }
+        
+        p {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            transition: 0.5s;
+        }
+        
+        p:hover {
+            color: #3289a8;
+        }
+        
+        span {
+            color: #3289a8;
+        }
+        
+        ul {
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+        }
+        
+        ul>li>a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            transition: 0.5s;
+        }
+        
+        ul>li>a:hover {
+            color: #011a24;
+        }
+        
+        .form {
+            width: 400px;
+            height: 300px;
+            background: #35424a;
+            color: #fff;
+            padding: 30px 30px 10px 10px;
+            margin: auto;
+            border: 5px solid red;
+        }
+        /* h3 {
+            padding-bottom: 30px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        input {
+            height: 25px;
+        }
+        
+        .btn {
+            width: 70px;
+            height: 40px;
+        }
+        
+        .btn:active {
+            color: red;
+        }
+        
+        .btn:hover {
+            background: #eee;
+        } */
+        
+        @media (max-width: 768px) {
+            #menu-bar {
+                display: block;
+            }
+            ul {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 500px) {
+            .form {
+                width: 90%;
+            }
+        }
+        
+        .dropbtn {
+            background-color: #35424a;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #69c6f1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: #3a43c0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>1-2-3 <span>Web-Design</span></p>
+        <span class="dropdown">
+        <button class="dropbtn">SEE MORE</button>
+        <span class="dropdown-content">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+          </ul>
+        </span>
+        </span>
+    </header>
+
+    <div class="div2">
+        <h1>Contact Us</h1><br>
+
+        <form>
+            <label for="fname">Name</label><br />
+            <input class="name" type="text" id="fname" name="fname" placeholder="Enter your name" /><br />
+            <label for="email">Email Address</label><br />
+            <input class="name" type="email" id="email" name="email" placeholder="Enter your mail" /><br />
+            <label for="Message">Message</label><br />
+            <textarea class="name message" id="Message" placeholder="Your message..." name="Message"></textarea
+        ><br /><br />
+        <input class="submit message" type="submit" value="Send" />
+      </form>
+    </div>
+  </body>
+</html>
